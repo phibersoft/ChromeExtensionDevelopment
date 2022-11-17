@@ -5,13 +5,22 @@ This is a boilerplate for chrome extension development with webpack and typescri
 ## Getting Started
 
 1. Clone this repository
-2. Run `npm install`
-3. Run `npm run build`
-4. Open chrome and go to `chrome://extensions`
-5. Enable developer mode
-6. Click on `Load unpacked` and select the `dist` folder
-7. You should see the extension in your chrome browser
-8. Make changes to the code and run `npm run build` to see the changes
+
+```bash
+    git clone https://github.com/phibersoft/ChromeExtensionDevelopment.git
+    
+    # or if you wanna use react
+    
+    git clone --branch with-react https://github.com/phibersoft/ChromeExtensionDevelopment.git
+```
+
+3. Run `npm install`
+4. Run `npm run build`
+5. Open chrome and go to `chrome://extensions`
+6. Enable developer mode
+7. Click on `Load unpacked` and select the `dist` folder
+8. You should see the extension in your chrome browser
+9. Make changes to the code and run `npm run build` to see the changes
 
 ## Directories and Files
 
