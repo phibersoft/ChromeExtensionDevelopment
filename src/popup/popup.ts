@@ -1,7 +1,7 @@
 // This script is injected into the page when the extension is activated.
 // You can use it to interact with the Popup UI.
 
-import { sendMessage } from "../utils";
+import { sendMessage } from "@/utils";
 
 console.log(`Popup script loaded.`);
 

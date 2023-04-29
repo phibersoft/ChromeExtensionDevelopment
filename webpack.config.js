@@ -21,6 +21,9 @@ const config = {
   },
   resolve: {
     extensions: [".js", ".ts"],
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+    },
   },
   devServer: {
     contentBase: "./dist",
