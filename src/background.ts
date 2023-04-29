@@ -6,24 +6,18 @@ import { IMessage } from "./types";
 
 console.log(`Background script loaded.`);
 
-chrome.runtime.onMessage.addListener(
-  (message: IMessage, sender, sendResponse) => {
-    console.log(
-      `Message received from ${
-        sender.tab ? "a content script:" + sender.tab.url : "the extension"
-      }.`
-    );
-    console.log(message);
+chrome.runtime.onMessage.addListener((message: IMessage, sender, sendResponse) => {
+  console.log(`Message received from ${sender.tab ? "a content script:" + sender.tab.url : "the extension"}.`);
+  console.log(message);
 
-    switch (message.type) {
-      case "Plus":
-        sendResponse({ result: message.payload.a + message.payload.b });
-        break;
-      case "Square":
-        sendResponse({ result: message.payload.a * message.payload.a });
-        break;
-      default:
-        sendResponse({ result: 0 });
-    }
+  switch (message.type) {
+    case "Plus":
+      sendResponse({ result: message.payload.a + message.payload.b });
+      break;
+    case "Square":
+      sendResponse({ result: message.payload.a * message.payload.a });
+      break;
+    default:
+      sendResponse({ result: 0 });
   }
-);
+});

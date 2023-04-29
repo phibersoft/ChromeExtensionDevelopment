@@ -8,9 +8,9 @@ This is a boilerplate for chrome extension development with webpack and typescri
 
 ```bash
     git clone https://github.com/phibersoft/ChromeExtensionDevelopment.git
-    
+
     # or if you wanna use react
-    
+
     git clone --branch with-react https://github.com/phibersoft/ChromeExtensionDevelopment.git
 ```
 
@@ -63,5 +63,6 @@ This is a boilerplate for chrome extension development with webpack and typescri
   folder to the chrome web store.
 
 ## Roadmap
+
 - Babel Support
 - SasS Support
