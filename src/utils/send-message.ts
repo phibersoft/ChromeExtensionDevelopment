@@ -1,6 +1,6 @@
-import { IMessage } from "../types";
+import { Message } from "../types";
 
-export const sendMessage = <ReturnType = any>(message: IMessage) => {
+export const sendMessage = <ReturnType = any>(message: Message) => {
   return new Promise<ReturnType>((resolve, reject) => {
     chrome.runtime.sendMessage(message, (response) => {
       if (chrome.runtime.lastError) {

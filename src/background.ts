@@ -2,11 +2,11 @@
 // It is used to send and receive messages from the frontend
 // NOTE: background script is a service-worker like script which runs in the background, its run in a separate thread
 
-import { IMessage } from "./types";
+import { Message } from "./types";
 
 console.log(`Background script loaded.`);
 
-chrome.runtime.onMessage.addListener((message: IMessage, sender, sendResponse) => {
+chrome.runtime.onMessage.addListener((message: Message, sender, sendResponse) => {
   console.log(`Message received from ${sender.tab ? "a content script:" + sender.tab.url : "the extension"}.`);
   console.log(message);
 
