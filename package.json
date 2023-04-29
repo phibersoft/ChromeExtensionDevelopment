@@ -4,7 +4,8 @@
   "description": "This is a boilerplate for developing chrome extensions with typescript and webpack.",
   "scripts": {
     "build": "webpack",
-    "start": "webpack --watch"
+    "start": "webpack --watch",
+    "prettier": "prettier --write \"src/**/*.ts\""
   },
   "author": "phibersoft",
   "keywords": [
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@types/chrome": "0.0.234",
     "copy-webpack-plugin": "^11.0.0",
+    "prettier": "^2.8.8",
     "ts-loader": "^9.4.2",
     "typescript": "^5.0.4",
     "webpack": "^5.81.0",
